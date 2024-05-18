@@ -6,17 +6,26 @@
   --LightSlate: #a8b2d1;
   --LightestSlate: #ccd6f6;
   --White: #e6f1ff;
-  --Green: #64ffda #64ffda;
+  --Green: #64ffda;
 }
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   background-color: var(--Navy);
-  color: var(--White);
+  color: var(--LightSlate);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 h1,
@@ -29,8 +38,30 @@ h2,
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+a:hover {
+  color: var(--Green);
+  transition: 0.3s ease;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.text-white {
+  color: var(--White);
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.relaxed {
+  line-height: 1.625em;
 }

@@ -1,0 +1,25 @@
+.nav {
+    margin-top: 4rem;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+
+}
+
+.nav ul li a {
+    display: flex;
+    gap: 1rem;
+    padding: .75rem 0;
+    align-items: center;
+}
+
+.navIndicator {
+    width: 2rem;
+    height: 1px;
+    background-color: var(--LightSlate);
+}

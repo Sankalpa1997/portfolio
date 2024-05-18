@@ -1,11 +1,13 @@
-import sankalpaLogo from "../assets/Sankalpa.png";
+import Navbar from "./Navbar";
+import styles from "./header.module.css";
 
 export default function Header() {
   return (
-    <div className="">
-      <h1>Sankalpa Senevirathne</h1>
-      <h2>Full Stack Developer</h2>
+    <header className={styles.header}>
+      <h1 className="text-white">Sankalpa Senevirathne</h1>
+      <h2 className="text-white w-500">Full Stack Developer</h2>
       <p>Web Wizard at Work : Weaving Digital Dreams</p>
-    </div>
+      <Navbar />
+    </header>
   );
 }
