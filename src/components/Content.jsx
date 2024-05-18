@@ -10,6 +10,12 @@ export default function Content() {
         proficient in cross-platform app development with Flutter. Let's connect
         and share the journey of creativity and innovation in the digital world.
       </p>
+      <p className="relaxed">
+        I’m currently learning about SEO & Digital Marketing as a self-interest.
+        I'm mostly active within the Software Engineering, ReactJs development &
+        cross platform mobile app development communities. Fun facts: I love to
+        play the guitar and play video games when I need a break ...
+      </p>
     </div>
   );
 }
