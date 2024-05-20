@@ -22,4 +22,10 @@
     width: 2rem;
     height: 1px;
     background-color: var(--LightSlate);
+    transition: width 0.2s ease; 
+}
+
+.nav ul li a:hover .navIndicator {
+    background-color: var(--Green);
+    width: 4rem; 
 }
