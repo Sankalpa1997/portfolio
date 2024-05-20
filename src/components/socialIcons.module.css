@@ -1,0 +1,16 @@
+.socialIconsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.socialIconsWrapper li {
+}
+.socialIconsWrapper li a {
+}
+.socialIconsWrapper li a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
