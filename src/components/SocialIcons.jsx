@@ -3,7 +3,7 @@ export default function SocialIcons() {
   return (
     <ul className={styles.socialIconsWrapper}>
       <li>
-        <a href="">
+        <a href="https://github.com/Sankalpa1997" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -15,7 +15,7 @@ export default function SocialIcons() {
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
