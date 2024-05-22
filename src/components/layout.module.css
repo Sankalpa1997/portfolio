@@ -1,24 +1,17 @@
-/* .layout {
-  max-width: 1280px;
-  margin: 6rem auto 0;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-} */
-
 .fullScreenContainer {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* Ensure that the gradient covers the full screen */
+  overflow: hidden; 
 }
 
 .layout {
-  max-width: 1280px;
-  margin: 6rem auto 0;
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  position: relative; /* Ensure it stacks correctly */
-  z-index: 10; /* Ensure it is above the MouseGradient */
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative; 
+  z-index: 10;
 }
