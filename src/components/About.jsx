@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="section-padding-bottom">
       <div>
         <p className="relaxed">
           Passionate full-stack developer with a solid foundation in PHP Laravel

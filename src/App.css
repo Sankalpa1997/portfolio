@@ -58,6 +58,13 @@ a:hover {
   padding: 2rem;
 }
 
+.section-padding-top {
+  padding-top: 3.5rem;
+}
+.section-padding-bottom {
+  padding-bottom: 3.5rem;
+}
+
 .text-white {
   color: var(--White);
 }
