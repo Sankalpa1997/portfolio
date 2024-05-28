@@ -35,7 +35,9 @@ export default function Experience() {
         <div key={index} className={styles.experienceWrapper}>
           <h3>
             <span className={styles.position}>{exp.position}</span>
-            <span className={styles.companyName}> @ {exp.companyName}</span>
+            <span className={styles.companyName}>
+              {' '}@ <a href={exp.companyWebsite} target="_blank" rel="noopener noreferrer">{exp.companyName}</a>
+            </span>
           </h3>
           <p>{`${exp.startDate} - ${exp.endDate}`}</p>
           <div dangerouslySetInnerHTML={{ __html: exp.tasks }} />
