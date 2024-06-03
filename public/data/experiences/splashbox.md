@@ -4,6 +4,10 @@ companyName: "Splashbox"
 companyWebsite: "https://www.splashbox.com.au"
 startDate: "Dec 2021"
 endDate: "Sep 2023"
+skills: 
+  - "PHP Laravel"
+  - "MySQL"
+  - "React JS"
 ---
 
 - Developed mobile responsive websites from scratch using HTML5, CSS, SASS, JavaScript, and JQuery while closely adhering to the provided UI/UX design in Figma and Adobe XD.

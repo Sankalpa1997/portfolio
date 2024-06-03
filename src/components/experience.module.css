@@ -1,17 +1,53 @@
 .experienceContainer {
- display: flex;
- flex-direction: column;
- gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .experienceWrapper {
-    
 }
 
 .position {
-    color: var(--White);
+  color: var(--White);
 }
 
 .companyName {
-    color: var(--Green);
+  color: var(--Green);
+}
+
+.duration {
+color: var(--Slate);
+margin-top: 0;
+}
+
+.descriptionWrapper ul {
+  list-style: none;
+}
+
+.descriptionWrapper ul li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.descriptionWrapper ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--Green);
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skillPill {
+  display: inline-block;
+  background-color: var(--LightestNavy);
+  color: var(--Green);
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.675em;
+  font-weight: 500;
 }
