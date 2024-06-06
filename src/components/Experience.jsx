@@ -40,6 +40,20 @@ export default function Experience() {
             </span>
           </h3>
           <p className={styles.duration}>{`${exp.startDate} - ${exp.endDate}`}</p>
+
+          <div className={styles.projectsContainer}>
+            <ul>
+            {exp.projects && exp.projects.map((project, i) => (
+              <li key={i} className={styles.projectItem}>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                
+                <span>{project.title}</span>
+                </a>
+              </li>
+            ))}
+            </ul>
+          </div>
+
           <div className={`${styles.descriptionWrapper} text-slate`} dangerouslySetInnerHTML={{ __html: exp.tasks }} />
           <div className={styles.skills}>
             {exp.skills && exp.skills.map((skill, i) => (
