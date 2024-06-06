@@ -43,6 +43,7 @@ margin-top: 0;
 .skillPill {
   display: inline-block;
   background-color: var(--LightestNavy);
+  background-color: rgba(94, 234, 212, .1);
   color: var(--Green);
   border-radius: 12px;
   padding: 5px 10px;
