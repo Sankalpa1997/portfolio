@@ -66,9 +66,13 @@ export default function Experience() {
               <span key={i} className={styles.skillPill}>{skill}</span>
             ))}
           </div>
-          
+
         </div>
       ))}
+
+      <div>
+        <a href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer"><span>View Detailed Resume</span></a>
+      </div>
     </div>
   );
 }
