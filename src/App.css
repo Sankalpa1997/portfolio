@@ -92,3 +92,10 @@ a:hover svg {
 .relaxed {
   line-height: 1.625em;
 }
+
+.iconLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+}

@@ -47,7 +47,7 @@ export default function Experience() {
             <ul>
             {exp.projects && exp.projects.map((project, i) => (
               <li key={i} className={styles.projectItem}>
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <a className='iconLink' href={project.url} target="_blank" rel="noopener noreferrer">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 10L10 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M16 13L18 11C19.3807 9.61929 19.3807 7.38071 18 6V6C16.6193 4.61929 14.3807 4.61929 13 6L11 8M8 11L6 13C4.61929 14.3807 4.61929 16.6193 6 18V18C7.38071 19.3807 9.61929 19.3807 11 18L13 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -71,7 +71,16 @@ export default function Experience() {
       ))}
 
       <div>
-        <a href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer"><span>View Detailed Resume</span></a>
+        <a className={`iconLink ${styles.resumeLink}`} href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
+          <span>View Detailed Resume</span>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 256 256">
+            <g fill="currentColor" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: 'normal' }}>
+              <g transform="scale(10.66667,10.66667)">
+                <path d="M3,3v18h18v-9h-2v7h-14v-14h7v-2zM14,3v2h3.58594l-9.29297,9.29297l1.41406,1.41406l9.29297,-9.29297v3.58594h2v-7z"></path>
+              </g>
+            </g>
+          </svg>
+        </a>
       </div>
     </div>
   );
