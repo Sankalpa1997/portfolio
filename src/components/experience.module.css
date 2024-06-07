@@ -20,6 +20,30 @@ color: var(--Slate);
 margin-top: 0;
 }
 
+.projectsContainer ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.projectItem {
+  list-style: none;
+}
+
+.projectItem a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.projectItem a svg {
+  width: 1rem;
+  height: 1rem;
+}
+
 .descriptionWrapper ul {
   list-style: none;
 }

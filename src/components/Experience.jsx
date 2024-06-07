@@ -33,12 +33,14 @@ export default function Experience() {
     <div className={styles.experienceContainer}>
       {experiences.map((exp, index) => (
         <div key={index} className={styles.experienceWrapper}>
+
           <h3>
             <span className={styles.position}>{exp.position}</span>
             <span className={styles.companyName}>
               {' '}@ <a href={exp.companyWebsite} target="_blank" rel="noopener noreferrer">{exp.companyName}</a>
             </span>
           </h3>
+
           <p className={styles.duration}>{`${exp.startDate} - ${exp.endDate}`}</p>
 
           <div className={styles.projectsContainer}>
@@ -46,8 +48,11 @@ export default function Experience() {
             {exp.projects && exp.projects.map((project, i) => (
               <li key={i} className={styles.projectItem}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                
-                <span>{project.title}</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 10L10 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M16 13L18 11C19.3807 9.61929 19.3807 7.38071 18 6V6C16.6193 4.61929 14.3807 4.61929 13 6L11 8M8 11L6 13C4.61929 14.3807 4.61929 16.6193 6 18V18C7.38071 19.3807 9.61929 19.3807 11 18L13 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                  <span>{project.title}</span>
                 </a>
               </li>
             ))}
@@ -55,11 +60,13 @@ export default function Experience() {
           </div>
 
           <div className={`${styles.descriptionWrapper} text-slate`} dangerouslySetInnerHTML={{ __html: exp.tasks }} />
+          
           <div className={styles.skills}>
             {exp.skills && exp.skills.map((skill, i) => (
               <span key={i} className={styles.skillPill}>{skill}</span>
             ))}
           </div>
+          
         </div>
       ))}
     </div>
