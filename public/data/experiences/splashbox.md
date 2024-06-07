@@ -18,7 +18,7 @@ skills:
   - "GitHub"
   - "NPM"
   - "Webpack"
-  - "Wordpress"
+  - "WordPress"
   - "Shopify"
   - "Webflow"
 ---
