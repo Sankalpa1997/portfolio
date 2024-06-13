@@ -2,13 +2,13 @@
 title: "Civiq Australia"
 companyName: "Splashbox"
 projectURL: "https://www.civiq.com.au"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+description: "Civiq Australia is a visionary organization committed to improving communities by providing essential amenities such as drinking fountains, public showers, cycling products, hand washing stations, and notice boards."
 techStack:
   - "Custom WordPress"
   - "PHP"
   - "HTML"
   - "CSS"
-  - "SASS"
+  - "SCSS"
   - "JS"
   - "JQuery"
 plugins:

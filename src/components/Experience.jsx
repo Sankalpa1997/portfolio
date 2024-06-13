@@ -64,7 +64,7 @@ export default function Experience() {
             
             <div className={styles.skills}>
               {exp.skills && exp.skills.map((skill, i) => (
-                <span key={i} className={styles.skillPill}>{skill}</span>
+                <span key={i} className="pill">{skill}</span>
               ))}
             </div>
 

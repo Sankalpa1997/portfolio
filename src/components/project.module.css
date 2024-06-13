@@ -1,0 +1,23 @@
+.projectCard:hover {
+    color: var(--White);
+}
+
+.featuredTitle {
+    color: var(--Green);
+    font-size: .75em;
+    font-weight: 500;
+    
+}
+
+.projectDescriptionWrapper {
+    background-color: var(--LightestNavy);
+    box-shadow: 0 10px 30px -15px var(--Navy);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-size: .875em;
+}
+
+.projectCompanyName {
+    font-weight: 500;
+    color: var(--Slate);
+}
