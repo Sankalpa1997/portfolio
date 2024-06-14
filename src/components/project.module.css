@@ -1,23 +1,80 @@
-.projectCard:hover {
-    color: var(--White);
-}
-
 .featuredTitle {
-    color: var(--Green);
-    font-size: .75em;
-    font-weight: 500;
-    
-}
-
-.projectDescriptionWrapper {
-    background-color: var(--LightestNavy);
-    box-shadow: 0 10px 30px -15px var(--Navy);
-    padding: 1.5rem;
-    margin: 1rem 0;
-    font-size: .875em;
+  color: var(--Green);
+  font-size: 0.75em;
+  font-weight: 500;
 }
 
 .projectCompanyName {
-    font-weight: 500;
-    color: var(--Slate);
+  font-weight: 500;
+  color: var(--Slate);
+}
+
+.projectInfoWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--LightestNavy);
+  box-shadow: 0 10px 30px -15px var(--Navy);
+  margin: 1rem 0;
+  font-size: 0.875em;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 60%;
+}
+
+.projectImageContainer {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+
+.projectImageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 25, 47, 0.5),
+    rgba(10, 25, 47, 0)
+  );
+  background-color: var(--LightestNavy);
+  opacity: 0.7;
+  z-index: 1;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.projectCard:hover .projectImageContainer::before {
+  background-color: transparent;
+  opacity: 0;
+}
+
+.projectCard:hover .projectImageContainer img {
+  filter: none;
+}
+
+.projectCard:hover {
+  color: var(--White);
+}
+.projectCard:hover span {
+  color: var(--Green);
+}
+
+.projectCard:hover svg {
+  margin-left: 0.5rem;
+  color: var(--Green);
 }

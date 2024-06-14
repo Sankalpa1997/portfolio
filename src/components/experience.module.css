@@ -16,8 +16,8 @@
 }
 
 .duration {
-color: var(--Slate);
-margin-top: 0;
+  color: var(--Slate);
+  margin-top: 0;
 }
 
 .projectsContainer ul {
@@ -31,7 +31,6 @@ margin-top: 0;
   list-style: none;
 }
 
-
 .projectItem a svg {
   width: 1rem;
   height: 1rem;
@@ -42,8 +41,8 @@ margin-top: 0;
 }
 
 .descriptionWrapper ul li {
-    position: relative;
-    padding-left: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
 }
 
 .descriptionWrapper ul li::before {

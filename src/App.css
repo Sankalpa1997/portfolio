@@ -96,6 +96,20 @@ a:hover {
   gap: 0.25rem;
 }
 
+.iconButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.iconButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.3s ease;
+}
+
 .pill {
   display: inline-block;
   background-color: var(--LightestNavy);
