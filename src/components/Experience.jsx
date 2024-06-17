@@ -5,7 +5,7 @@ import remarkHtml from 'remark-html';
 import frontMatter from 'front-matter';
 
 const fetchMarkdownFile = async (filePath) => {
-  const response = await fetch(filePath);
+  const response = await fetch(`/portfolio${filePath}`);
   const text = await response.text();
   const { attributes, body } = frontMatter(text);
   const htmlContent = await remark().use(remarkHtml).process(body);

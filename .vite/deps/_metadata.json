@@ -1,0 +1,47 @@
+{
+  "hash": "719d48d6",
+  "browserHash": "b35b6b1a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "fcc2700e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "0cc33ac2",
+      "needsInterop": true
+    },
+    "remark": {
+      "src": "../../node_modules/remark/index.js",
+      "file": "remark.js",
+      "fileHash": "aebc17b4",
+      "needsInterop": false
+    },
+    "remark-html": {
+      "src": "../../node_modules/remark-html/index.js",
+      "file": "remark-html.js",
+      "fileHash": "786ec3c9",
+      "needsInterop": false
+    },
+    "front-matter": {
+      "src": "../../node_modules/front-matter/index.js",
+      "file": "front-matter.js",
+      "fileHash": "ecb3d408",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-5ITOPCZY": {
+      "file": "chunk-5ITOPCZY.js"
+    },
+    "chunk-L47X5L75": {
+      "file": "chunk-L47X5L75.js"
+    },
+    "chunk-USJHI7ER": {
+      "file": "chunk-USJHI7ER.js"
+    }
+  }
+}
