@@ -13,6 +13,7 @@ techStack:
   - "JS"
   - "JQuery"
 plugins:
+  - "WooCommerce"
   - "ACF Pro"
   - "TypeForm"
   - "Owl Slider Js"

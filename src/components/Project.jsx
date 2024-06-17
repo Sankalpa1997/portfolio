@@ -21,7 +21,7 @@ const fetchMarkdownFile = async (filePath) => {
 
     // Return attributes with plain text description
     return { ...attributes, desc: htmlContent.toString(), imagePath }; // Assuming body is plain text
-    
+
   } catch (error) {
     console.error('Error fetching or processing markdown file:', error);
     throw error; // Rethrow error for higher-level handling
@@ -37,7 +37,8 @@ export default function Project() {
         const projectFiles = [
           '/data/projects/civiq.md',
           '/data/projects/halifax.md',
-          '/data/projects/aqualine.md',
+          '/data/projects/plugseven.md',
+          '/data/projects/aqualine.md'
         ];
         const promises = projectFiles.map(file => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);
