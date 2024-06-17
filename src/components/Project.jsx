@@ -17,8 +17,11 @@ const fetchMarkdownFile = async (filePath) => {
     console.log('Attributes:', attributes);
     console.log('Body:', body);
 
+    const imagePath = `/data/projects/images/${attributes.image}`;
+
     // Return attributes with plain text description
-    return { ...attributes, desc: htmlContent.toString() }; // Assuming body is plain text
+    return { ...attributes, desc: htmlContent.toString(), imagePath }; // Assuming body is plain text
+    
   } catch (error) {
     console.error('Error fetching or processing markdown file:', error);
     throw error; // Rethrow error for higher-level handling
@@ -33,7 +36,8 @@ export default function Project() {
       try {
         const projectFiles = [
           '/data/projects/civiq.md',
-          // Add other project files here
+          '/data/projects/halifax.md',
+          '/data/projects/aqualine.md',
         ];
         const promises = projectFiles.map(file => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);
@@ -50,7 +54,7 @@ export default function Project() {
 
   return (
     <section id="project" className="section-padding-bottom">
-      <div className="projects-wrapper">
+      <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
           <a key={index} href={project.projectURL} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>
             <div>
@@ -68,7 +72,8 @@ export default function Project() {
                   </div>
                 </div>
                 <div className={styles.projectImageContainer}>
-                  <img src="./src/assets/civiq.png" alt={`${project.title} Screenshot`} />
+                  
+                  <img src={project.imagePath} alt={`${project.title} Screenshot`} />
                 </div>
               </div>
 
