@@ -6,7 +6,7 @@ import styles from "./project.module.css";
 
 const fetchMarkdownFile = async (filePath) => {
   try {
-    const response = await fetch(`/portfolio${filePath}`);
+    const response = await fetch(filePath);
     const text = await response.text();
     console.log('Fetched Markdown File:', text);
 
