@@ -43,6 +43,14 @@ export default function Project() {
         const promises = projectFiles.map(file => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);
         console.log('Projects:', projects);
+
+        projects.forEach(project => {
+          console.log('Title:', project.title);
+          console.log('Description:', project.desc);
+          console.log('Image Path:', project.imagePath);
+          // Display or use this information in your application
+      });
+
         setProjects(projects);
       } catch (error) {
         console.error('Error loading projects:', error);
