@@ -122,3 +122,7 @@ a:hover {
   font-size: 0.675em;
   font-weight: 500;
 }
+
+#about, #experience, #project {
+  scroll-margin-top: 7rem;
+}
