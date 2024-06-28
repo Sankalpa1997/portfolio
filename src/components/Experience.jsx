@@ -30,7 +30,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="section-padding-bottom">
+    <section id="experience" className="section-padding-bottom scroll">
       <div className={styles.experienceContainer}>
         {experiences.map((exp, index) => (
           <div key={index} className={styles.experienceWrapper}>

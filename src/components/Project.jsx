@@ -8,14 +8,14 @@ const fetchMarkdownFile = async (filePath) => {
   try {
     const response = await fetch(filePath);
     const text = await response.text();
-    console.log('Fetched Markdown File:', text);
+    // console.log('Fetched Markdown File:', text);
 
     // Parse front matter and body
     const { attributes, body } = frontMatter(text);
     const htmlContent = await remark().use(remarkHtml).process(body);
     
-    console.log('Attributes:', attributes);
-    console.log('Body:', body);
+    // console.log('Attributes:', attributes);
+    // console.log('Body:', body);
 
     const imagePath = `/data/projects/images/${attributes.image}`;
 
@@ -42,12 +42,12 @@ export default function Project() {
         ];
         const promises = projectFiles.map(file => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);
-        console.log('Projects:', projects);
+        // console.log('Projects:', projects);
 
         projects.forEach(project => {
-          console.log('Title:', project.title);
-          console.log('Description:', project.desc);
-          console.log('Image Path:', project.imagePath);
+          // console.log('Title:', project.title);
+          // console.log('Description:', project.desc);
+          // console.log('Image Path:', project.imagePath);
           // Display or use this information in your application
       });
 
@@ -62,7 +62,7 @@ export default function Project() {
   }, []);
 
   return (
-    <section id="project" className="section-padding-bottom">
+    <section id="project" className="section-padding-bottom scroll">
       <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
           <a key={index} href={project.projectURL} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>

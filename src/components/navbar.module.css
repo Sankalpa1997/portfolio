@@ -19,6 +19,15 @@
     align-items: center;
 }
 
+.nav ul li a.active  {
+    color: var(--Green);
+}
+
+.nav ul li a.active .navIndicator {
+    background-color: var(--Green);
+    width: 4rem; 
+}
+
 .navIndicator {
     width: 2rem;
     height: 1px;
