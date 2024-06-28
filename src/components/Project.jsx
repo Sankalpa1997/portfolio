@@ -72,7 +72,7 @@ export default function Project() {
               <h4 className={styles.projectCompanyName}>@{project.companyName}</h4>
               <div className={styles.projectInfoWrapper}>
                 <div className={styles.projectDescriptionContainer}>
-                  <div>{project.description}</div>
+                  <div><p className="relaxed">{project.description}</p></div>
                   <div className="iconButton">
                     <span className="">Visit Project</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g data-name="92-Arrow Right">

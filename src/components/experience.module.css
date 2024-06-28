@@ -43,6 +43,8 @@
 .descriptionWrapper ul li {
   position: relative;
   padding-left: 1.5rem;
+  line-height: 1.5em;
+  margin: .25rem 0;
 }
 
 .descriptionWrapper ul li::before {
