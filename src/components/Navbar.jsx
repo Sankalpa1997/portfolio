@@ -62,7 +62,7 @@ const Navbar = () => {
         behavior: 'smooth',
         block: 'start',
       });
-      setActiveItem(id);
+      // setActiveItem(id);
     }
   };
 
