@@ -11,8 +11,15 @@
 
 @font-face {
   font-family: 'Sofia Pro';
+  src: url('../fonts/Sofia-Pro-Light-Az.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
   src: url('../fonts/Sofia-Pro-Regular-Az.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -20,13 +27,6 @@
   font-family: 'Sofia Pro';
   src: url('../fonts/Sofia-Pro-Bold-Az.woff') format('woff');
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sofia Pro';
-  src: url('../fonts/Sofia-Pro-Light-Az.woff') format('woff');
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -44,7 +44,7 @@ html {
 body {
   margin: 0;
   font-family: "Sofia Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 16px;
   background-color: var(--Navy);
@@ -147,8 +147,8 @@ a:hover {
   padding: 5px 10px;
   margin-right: 5px;
   margin-bottom: 5px;
-  font-size: 0.675em;
-  font-weight: 500;
+  font-size: 0.75em;
+  font-weight: 400;
 }
 
 #about, #experience, #project {
