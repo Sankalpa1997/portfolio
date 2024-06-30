@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 const sections = {
   about: null,
   experience: null,
-  project: null,
+  projects: null,
 };
 
 const Navbar = () => {

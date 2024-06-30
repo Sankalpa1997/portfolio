@@ -62,7 +62,7 @@ export default function Project() {
   }, []);
 
   return (
-    <section id="project" className="section-padding-bottom scroll">
+    <section id="projects" className="section-padding-bottom">
       <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
           <a key={index} href={project.projectURL} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>
