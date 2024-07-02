@@ -1,11 +1,13 @@
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
+  max-height: 100vh;
+  box-sizing: border-box;
   padding: 6rem 0;
-  position: sticky;
-  top: 0;
 }
 
 @media screen and (max-width: 750px) {

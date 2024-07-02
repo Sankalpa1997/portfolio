@@ -1,8 +1,17 @@
 .mouseGradient {
   position: absolute;
-  z-index: 5;
-  left: 0;
-  top: 0;
+  z-index: 25;
+  /* width: 100vw; */
+  /* max-height: 100vh; */
+  background: radial-gradient(600px at 1324px 54px, rgba(29, 78, 216, 0.15), transparent 80%);
+  transition: background 0.6s ease-in-out;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* .element {
+  position: absolute;
+  z-index: 4;
   width: 100vw;
   height: 100vh;
   background: radial-gradient(
@@ -10,20 +19,7 @@
     rgba(29, 78, 216, 0.15),
     transparent 80%
   );
-  transition: background 0.6s ease-in-out;
-}
-
-.element {
-  position: absolute;
-  z-index: 4;
-  width: 100vw;
-  height: 100vh;
-  /* background: radial-gradient(
-    600px at 1324px 54px,
-    rgba(29, 78, 216, 0.15),
-    transparent 80%
-  ); */
   background-size: 150% 150%;
   background-position: center center;
   transition: background-position 0.6s ease-in-out;
-}
+} */

@@ -27,10 +27,10 @@ export default function MouseGradient() {
 
   return (
     <>
-      <div 
+      {/* <div 
         className={styles.element} 
         style={{ backgroundPosition: `${mouseXpercentage}% ${mouseYpercentage}%` }}
-      ></div>
+      ></div> */}
       <div 
         className={styles.mouseGradient} 
         style={{ 

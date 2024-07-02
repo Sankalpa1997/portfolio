@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './navbar.module.css';
 import MenuItem from './MenuItem';
 
@@ -10,28 +10,22 @@ const sections = {
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState('about');
+  const isScrollingRef = useRef(false);
 
   useEffect(() => {
-    const contentDiv = document.getElementById('content');
-
-    if (!contentDiv) {
-      console.error('Content div not found');
-      return;
-    }
-
     const getAnchorPoints = () => {
       for (const key in sections) {
         const element = document.getElementById(key);
         if (element) {
           sections[key] = element.offsetTop;
-          // console.log(`Section ${key} position:`, sections[key]);
         }
       }
     };
 
     const handleScroll = () => {
-      // console.log('scrolling');
-      const scrollPosition = contentDiv.scrollTop + contentDiv.clientHeight / 2;
+      if (isScrollingRef.current) return;
+
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
       let currentSection = '';
       for (const section in sections) {
         if (sections[section] <= scrollPosition) {
@@ -45,24 +39,28 @@ const Navbar = () => {
     };
 
     getAnchorPoints();
-    contentDiv.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      console.log('Cleanup: Removing scroll event listener');
-      contentDiv.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [activeItem]);
 
   const handleLinkClick = (event, id) => {
-    console.log('click');
     event.preventDefault();
     const element = document.getElementById(id);
     if (element) {
+      isScrollingRef.current = true;
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
-      // setActiveItem(id);
+      setActiveItem(id);
+
+      // Re-enable the scroll event listener after the scrolling animation completes
+      setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 1000); // Adjust this timeout based on your scroll animation duration
     }
   };
 
