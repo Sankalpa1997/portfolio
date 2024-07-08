@@ -3,6 +3,7 @@ import styles from './experience.module.css';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 import frontMatter from 'front-matter';
+import RightArrow from './icons/RightArrow';
 
 const fetchMarkdownFile = async (filePath) => {
   const response = await fetch(filePath);
@@ -74,13 +75,7 @@ export default function Experience() {
         <div>
           <a className={`iconLink ${styles.resumeLink}`} href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
             <span>View Detailed Resume</span>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 256 256">
-              <g fill="currentColor" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: 'normal' }}>
-                <g transform="scale(10.66667,10.66667)">
-                  <path d="M3,3v18h18v-9h-2v7h-14v-14h7v-2zM14,3v2h3.58594l-9.29297,9.29297l1.41406,1.41406l9.29297,-9.29297v3.58594h2v-7z"></path>
-                </g>
-              </g>
-            </svg>
+            <RightArrow />
           </a>
         </div>
       </div>

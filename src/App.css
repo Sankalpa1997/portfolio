@@ -121,7 +121,15 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
+}
+
+.iconLink svg {
+  transition: 0.3s ease;
+}
+
+.iconLink:hover svg {
+  margin-left: 0.5rem;
 }
 
 .iconButton {
