@@ -1,17 +1,13 @@
 .fullScreenContainer {
   position: relative;
-  /* width: 100vw;
-  height: 100vh; 
-  overflow: hidden; */ 
   display: flex;
+  min-height: 100vh; 
 }
 
 .layout {
   display: flex;
-  /* flex-direction: row; */
   gap: 2rem;
   max-width: 1280px;
-  /* min-height: 100vh; */
   margin: 0 auto;
   padding: 0 2rem;
   position: relative; 

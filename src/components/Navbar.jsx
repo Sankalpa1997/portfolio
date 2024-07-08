@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './navbar.module.css';
 import MenuItem from './MenuItem';
 
@@ -8,9 +8,9 @@ const sections = {
   projects: null,
 };
 
-const Navbar = () => {
+export default function Navbar() {
   const [activeItem, setActiveItem] = useState('about');
-  const isScrollingRef = useRef(false);
+  const [isLinkClicked, setIsLinkClicked] = useState(false);
 
   useEffect(() => {
     const getAnchorPoints = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
     };
 
     const handleScroll = () => {
-      if (isScrollingRef.current) return;
+      if (isLinkClicked) return; // Skip if a link was clicked
 
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       let currentSection = '';
@@ -44,24 +44,22 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [activeItem]);
+  }, [activeItem, isLinkClicked]);
 
   const handleLinkClick = (event, id) => {
     event.preventDefault();
+    setIsLinkClicked(true); // Indicate that a link was clicked
+
     const element = document.getElementById(id);
     if (element) {
-      isScrollingRef.current = true;
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
-      setActiveItem(id);
-
-      // Re-enable the scroll event listener after the scrolling animation completes
-      setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 1000); // Adjust this timeout based on your scroll animation duration
     }
+
+    setActiveItem(id);
+    setTimeout(() => setIsLinkClicked(false), 1000); // Reset the flag after scrolling
   };
 
   const capitalizeFirstLetter = (string) => {
@@ -83,6 +81,4 @@ const Navbar = () => {
       <ul>{menuList}</ul>
     </nav>
   );
-};
-
-export default Navbar;
+}
