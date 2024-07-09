@@ -73,7 +73,7 @@ export default function Experience() {
         ))}
 
         <div>
-          <a className={`iconLink ${styles.resumeLink}`} href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="iconLink w-500" href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
             <span>View Detailed Resume</span>
             <RightArrow />
           </a>

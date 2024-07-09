@@ -4,6 +4,7 @@ import remarkHtml from 'remark-html';
 import frontMatter from "front-matter";
 import styles from "./project.module.css";
 import CircledArrow from "./icons/CircledArrow";
+import RightArrow from "./icons/RightArrow";
 
 const fetchMarkdownFile = async (filePath) => {
   try {
@@ -100,6 +101,14 @@ export default function Project() {
             </div>
           </a>
         ))}
+
+        <div>
+          <a className={`iconLink ${styles.resumeLink}`} href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
+            <span>View Projects Archive</span>
+            <RightArrow />
+          </a>
+        </div>
+
       </div>
     </section>
   );

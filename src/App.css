@@ -146,6 +146,11 @@ a:hover {
   transition: 0.3s ease;
 }
 
+.linkIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .pill {
   display: inline-block;
   background-color: var(--LightestNavy);
