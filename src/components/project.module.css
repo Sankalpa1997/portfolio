@@ -31,6 +31,7 @@
   gap: 2rem;
   padding: 1.5rem;
   width: 60%;
+  box-sizing: border-box;
 }
 
 .projectImageContainer {
@@ -83,4 +84,23 @@
 .projectCard:hover svg {
   margin-left: 0.5rem;
   color: var(--Green);
+}
+
+@media screen and (max-width: 750px) {
+  .projectInfoWrapper {
+    flex-direction: column;
+  }
+
+  .projectDescriptionContainer {
+    width: 100%;
+  }
+  .projectImageContainer {
+    width: 100%;
+  }
+  .projectDescriptionContainer {
+   order: 2;
+  }
+  .projectImageContainer {
+   order: 1;
+  }
 }
