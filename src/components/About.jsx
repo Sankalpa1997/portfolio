@@ -3,20 +3,15 @@ export default function About() {
     <section id="about" className="section-padding-bottom">
       <div>
         <p className="relaxed">
-          Passionate full-stack developer with a solid foundation in PHP Laravel
-          and React.js, complemented by expert-level skills in custom WordPress
-          and Shopify development, alongside Webflow proficiency. Experienced in
-          crafting Android apps using Java and iOS apps using Swift.
-          Additionally, proficient in cross-platform app development with
-          Flutter. Let's connect and share the journey of creativity and
-          innovation in the digital world.
+        Passionate full-stack developer with a solid foundation in PHP Laravel and React.js, specializing in custom theme development for WordPress and Shopify. 
+        Proficient in HTML, CSS, SCSS, JavaScript, and jQuery, I excel at transforming Figma designs into real-world applications with precision. 
+        Additionally, I am skilled in Webflow, creating seamless and visually appealing web experiences. 
+        Let’s connect and embark on a journey of creativity and innovation in the digital world.
         </p>
         <p className="relaxed">
-          I’m currently learning about SEO & Digital Marketing as a
-          self-interest. I'm mostly active within the Software Engineering,
-          ReactJs development & cross platform mobile app development
-          communities. Fun facts: I love to play the guitar and play video games
-          when I need a break ...
+        Outside of coding, I'm exploring SEO and Digital Marketing out of personal interest. 
+        Fun facts : I've developed this portfolio using React.js. 
+        In my downtime, I enjoy playing the guitar and diving into video games.
         </p>
       </div>
     </section>
