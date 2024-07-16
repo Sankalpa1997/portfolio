@@ -51,6 +51,11 @@ body {
   color: var(--LightSlate);
 }
 
+::selection {
+  background: var(--Green);
+  color: var(--Navy);       
+}
+
 h1,
 h2,
 h3,
