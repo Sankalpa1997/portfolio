@@ -65,6 +65,13 @@ export default function Project() {
 
   return (
     <section id="projects" className="section-padding-bottom">
+      <div className="section-header-wrapper">
+        <h2>
+          Projects
+          <span className="text-green">.</span>
+        </h2>
+        <div className="section-header-line"></div>
+      </div>
       <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
           <a key={index} href={project.projectURL} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>

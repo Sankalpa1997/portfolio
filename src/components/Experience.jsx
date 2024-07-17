@@ -32,6 +32,13 @@ export default function Experience() {
 
   return (
     <section id="experience" className="section-padding-bottom">
+      <div className="section-header-wrapper">
+        <h2>
+          Experience
+          <span className="text-green">.</span>
+        </h2>
+        <div className="section-header-line"></div>
+      </div>
       <div className={styles.experienceContainer}>
         {experiences.map((exp, index) => (
           <div key={index} className={styles.experienceWrapper}>
