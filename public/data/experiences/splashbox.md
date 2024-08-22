@@ -3,7 +3,7 @@ position: "Full Stack Developer"
 companyName: "Splashbox"
 companyWebsite: "https://www.splashbox.com.au"
 startDate: "Dec 2021"
-endDate: "Sep 2023"
+endDate: "Nov 2023"
 skills: 
   - "React JS"
   - "JavaScript"

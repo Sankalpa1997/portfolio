@@ -12,7 +12,37 @@
 
 .heroTitle {
   font-size: 4em;
+  line-height: 1em;
   color: var(--White);
+}
+
+.headerContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.profilePicWrapper {
+  display: flex;
+  display: none;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.profilePicWrapper img {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  border: 2px solid var(--Green); 
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.profilePicWrapper img:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
 }
 
 @media screen and (max-width: 750px) {

@@ -192,6 +192,24 @@ a:hover {
   font-weight: 400;
 }
 
+.btn {
+  background-color: var(--Green);
+  color: var(--Navy);
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  transition: .2s ease;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: var(--LightestNavy);
+  background-color: rgba(94, 234, 212, .1);
+  color: var(--Green);
+  backdrop-filter: blur(10px); /* Blur the background behind the button */
+  box-shadow: 0 4px 15px rgba(94, 234, 212, 0.25); /* Add a soft shadow for depth */
+  border: 2px solid rgba(94, 234, 212, 0.5); /* Light border to mimic glass edges */
+}
+
 #about, #experience, #projects {
   scroll-margin-top: 7rem;
 }
