@@ -40,7 +40,8 @@ export default function Project() {
           '/data/projects/civiq.md',
           '/data/projects/halifax.md',
           '/data/projects/plugseven.md',
-          '/data/projects/aqualine.md'
+          '/data/projects/aqualine.md',
+          '/data/projects/honan.md'
         ];
         const promises = projectFiles.map(file => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);

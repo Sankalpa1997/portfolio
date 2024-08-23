@@ -4,7 +4,7 @@ companyName: "Splashbox"
 companyWebsite: "https://www.splashbox.com.au"
 startDate: "Dec 2021"
 endDate: "Nov 2023"
-skills: 
+skills:
   - "React JS"
   - "JavaScript"
   - "JQuery"
@@ -14,13 +14,13 @@ skills:
   - "Bootstrap"
   - "JSON"
   - "MySQL"
+  - "WordPress"
+  - "Shopify"
+  - "Webflow"
   - "Git CLI"
   - "GitHub"
   - "NPM"
   - "Webpack"
-  - "WordPress"
-  - "Shopify"
-  - "Webflow"
 ---
 
 - Developed mobile responsive websites from scratch using HTML5, CSS, SASS, JavaScript, and JQuery while closely adhering to the provided UI/UX design in Figma and Adobe XD.

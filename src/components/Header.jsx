@@ -8,6 +8,12 @@ export default function Header() {
     <header className={styles.header}>
       <div>
         <div className={styles.headerContentWrapper}>
+          <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+            <filter id="blobFilter">
+              <feTurbulence type="fractalNoise" baseFrequency="0.01 0.02" numOctaves="3" result="warp" />
+              <feDisplacementMap in="SourceGraphic" in2="warp" scale="20" />
+            </filter>
+          </svg>
           <div className={styles.profilePicWrapper}>
             <img src={profilePic} alt="Profile" />
           </div>
