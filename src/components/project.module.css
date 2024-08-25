@@ -96,10 +96,7 @@
     filter: none;
   }
 
-}
-
-
-@media screen and (max-width: 750px) {
+  
   .projectInfoWrapper {
     flex-direction: column;
   }

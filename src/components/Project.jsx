@@ -90,13 +90,9 @@ export default function Project() {
   }, []);
 
   return (
-    <motion.section
+    <section
       id="projects"
       className="section-padding-bottom"
-      initial="hidden"
-      whileInView="visible"
-      variants={fadeInLeftWithBlur}
-      viewport={{ amount: 0.2 }}
     >
       <div className="section-header-wrapper">
         <h2>
@@ -105,15 +101,14 @@ export default function Project() {
         </h2>
         <div className="section-header-line"></div>
       </div>
-      <motion.div className={styles.projectsWrapper} variants={fadeInLeftWithBlur}>
+      <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
-          <motion.a
+          <a
             key={index}
             href={project.projectURL}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.projectCard}
-            variants={experienceCardVariant}
           >
             <div>
               <span className={styles.featuredTitle}>Featured Project</span>
@@ -158,7 +153,7 @@ export default function Project() {
                   ))}
               </div>
             </div>
-          </motion.a>
+          </a>
         ))}
 
         <div>
@@ -172,7 +167,7 @@ export default function Project() {
             <RightArrow />
           </a>
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }
