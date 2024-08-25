@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { remark } from 'remark';
-import remarkHtml from 'remark-html';
+import { remark } from "remark";
+import remarkHtml from "remark-html";
 import frontMatter from "front-matter";
 import styles from "./project.module.css";
 import CircledArrow from "./icons/CircledArrow";
 import RightArrow from "./icons/RightArrow";
+import { motion } from "framer-motion";
 
 const fetchMarkdownFile = async (filePath) => {
   try {
@@ -15,7 +16,7 @@ const fetchMarkdownFile = async (filePath) => {
     // Parse front matter and body
     const { attributes, body } = frontMatter(text);
     const htmlContent = await remark().use(remarkHtml).process(body);
-    
+
     // console.log('Attributes:', attributes);
     // console.log('Body:', body);
 
@@ -23,11 +24,35 @@ const fetchMarkdownFile = async (filePath) => {
 
     // Return attributes with plain text description
     return { ...attributes, desc: htmlContent.toString(), imagePath }; // Assuming body is plain text
-
   } catch (error) {
-    console.error('Error fetching or processing markdown file:', error);
+    console.error("Error fetching or processing markdown file:", error);
     throw error; // Rethrow error for higher-level handling
   }
+};
+
+const fadeInLeftWithBlur = {
+  hidden: { opacity: 0, x: -50, filter: "blur(10px)" },
+  visible: {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const experienceCardVariant = {
+  hidden: { opacity: 0, x: -50, filter: "blur(10px)" },
+  visible: {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.3, // Duration for each card
+    },
+  },
 };
 
 export default function Project() {
@@ -37,26 +62,26 @@ export default function Project() {
     const loadProjects = async () => {
       try {
         const projectFiles = [
-          '/data/projects/civiq.md',
-          '/data/projects/halifax.md',
-          '/data/projects/plugseven.md',
-          '/data/projects/aqualine.md',
-          '/data/projects/honan.md'
+          "/data/projects/civiq.md",
+          "/data/projects/halifax.md",
+          "/data/projects/plugseven.md",
+          "/data/projects/aqualine.md",
+          "/data/projects/honan.md",
         ];
-        const promises = projectFiles.map(file => fetchMarkdownFile(file));
+        const promises = projectFiles.map((file) => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);
         // console.log('Projects:', projects);
 
-        projects.forEach(project => {
+        projects.forEach((project) => {
           // console.log('Title:', project.title);
           // console.log('Description:', project.desc);
           // console.log('Image Path:', project.imagePath);
           // Display or use this information in your application
-      });
+        });
 
         setProjects(projects);
       } catch (error) {
-        console.error('Error loading projects:', error);
+        console.error("Error loading projects:", error);
         // Handle error state as needed
       }
     };
@@ -65,7 +90,14 @@ export default function Project() {
   }, []);
 
   return (
-    <section id="projects" className="section-padding-bottom">
+    <motion.section
+      id="projects"
+      className="section-padding-bottom"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInLeftWithBlur}
+      viewport={{ amount: 0.2 }}
+    >
       <div className="section-header-wrapper">
         <h2>
           Projects
@@ -73,51 +105,74 @@ export default function Project() {
         </h2>
         <div className="section-header-line"></div>
       </div>
-      <div className={styles.projectsWrapper}>
+      <motion.div className={styles.projectsWrapper} variants={fadeInLeftWithBlur}>
         {projects.map((project, index) => (
-          <a key={index} href={project.projectURL} target="_blank" rel="noopener noreferrer" className={styles.projectCard}>
+          <motion.a
+            key={index}
+            href={project.projectURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.projectCard}
+            variants={experienceCardVariant}
+          >
             <div>
               <span className={styles.featuredTitle}>Featured Project</span>
               <h3>{project.title}</h3>
-              <h4 className={styles.projectCompanyName}>@{project.companyName}</h4>
+              <h4 className={styles.projectCompanyName}>
+                @{project.companyName}
+              </h4>
               <div className={styles.projectInfoWrapper}>
                 <div className={styles.projectDescriptionContainer}>
-                  <div><p className="relaxed">{project.description}</p></div>
+                  <div>
+                    <p className="relaxed">{project.description}</p>
+                  </div>
                   <div className="iconButton">
                     <span className="">Visit Project</span>
                     <CircledArrow />
                   </div>
                 </div>
                 <div className={styles.projectImageContainer}>
-                  
-                  <img src={project.imagePath} alt={`${project.title} Screenshot`} />
+                  <img
+                    src={project.imagePath}
+                    alt={`${project.title} Screenshot`}
+                  />
                 </div>
               </div>
 
               {/* <div dangerouslySetInnerHTML={{ __html: project.desc }} /> */}
 
               <div className={styles.techStack}>
-                {project.techStack && project.techStack.map((tech, i) => (
-                  <span key={i} className="pill">{tech}</span>
-                ))}
+                {project.techStack &&
+                  project.techStack.map((tech, i) => (
+                    <span key={i} className="pill">
+                      {tech}
+                    </span>
+                  ))}
               </div>
               <div className={styles.plugins}>
-                {project.plugins && project.plugins.map((plugin, i) => (
-                  <span key={i} className="pill">{plugin}</span>
-                ))}
+                {project.plugins &&
+                  project.plugins.map((plugin, i) => (
+                    <span key={i} className="pill">
+                      {plugin}
+                    </span>
+                  ))}
               </div>
             </div>
-          </a>
+          </motion.a>
         ))}
 
         <div>
-          <a className={`iconLink ${styles.resumeLink}`} href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            className={`iconLink ${styles.resumeLink}`}
+            href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span>View Projects Archive</span>
             <RightArrow />
           </a>
         </div>
-
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
