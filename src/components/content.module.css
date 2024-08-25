@@ -19,7 +19,7 @@
   /* display: none; */
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .content {
     width: 100%;
     padding: 3rem 0;

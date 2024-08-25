@@ -213,3 +213,21 @@ a:hover {
 #about, #experience, #projects {
   scroll-margin-top: 7rem;
 }
+
+
+@media screen and (max-width: 750px) {
+  
+  .section-header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(15, 23, 42, .90);
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    padding: 1.25rem 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    box-sizing: border-box;
+  }
+
+}
