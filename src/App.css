@@ -221,7 +221,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: rgba(15, 23, 42, .90);
+    background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(8px);
     width: 100vw;
     padding: 1.25rem 2rem;
