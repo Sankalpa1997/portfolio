@@ -162,8 +162,8 @@ export default function Project() {
 
         <div>
           <a
-            className={`iconLink ${styles.resumeLink}`}
-            href="./data/Sankalpa Senevirathne - Full Stack Developer.pdf"
+            className={`hidden iconLink ${styles.resumeLink}`}
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
