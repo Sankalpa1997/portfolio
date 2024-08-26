@@ -62,11 +62,15 @@ export default function Project() {
     const loadProjects = async () => {
       try {
         const projectFiles = [
+          "/data/projects/honan.md",
+          "/data/projects/cge-golf.md",
+          "/data/projects/pace-interiors.md",
+          "/data/projects/williams-road.md",
+          "/data/projects/aa-semi-trailers.md",
           "/data/projects/civiq.md",
           "/data/projects/halifax.md",
           "/data/projects/plugseven.md",
           "/data/projects/aqualine.md",
-          "/data/projects/honan.md",
         ];
         const promises = projectFiles.map((file) => fetchMarkdownFile(file));
         const projects = await Promise.all(promises);

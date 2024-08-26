@@ -2,8 +2,7 @@
 title: "Honan"
 companyName: "Splashbox"
 projectURL: "https://honan.com.au/"
-description: "Halifax Elevators is renowned for its commitment to delivering customized elevator solutions. They offer a
-comprehensive suite of services, including elevator installation, maintenance, modernization, and repair, all performed with a dedication to excellence and safety."
+description: "Honan Insurance Group is an insurance broker that designs, prices, and negotiates insurance policies for businesses in Australia, New Zealand, and Southeast Asia. The company was founded in 1964 and is headquartered in Melbourne, Australia."
 image: "Honan.webp"
 techStack:
   - "Webflow"
