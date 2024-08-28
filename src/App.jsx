@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Initialize Google Analytics
-    ReactGA.initialize('G-21PSSKRKH5'); // Replace with your Google Analytics Measurement ID
+    ReactGA.initialize('G-7E31D2WLEC'); // Replace with your Google Analytics Measurement ID
 
     // Track the initial page load
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search });
