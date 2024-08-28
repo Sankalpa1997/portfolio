@@ -10,7 +10,7 @@ export default function Header() {
 
     ReactGA.event({
       category: 'Social',
-      event: 'LinkedIn Connect Click',
+      action: 'LinkedIn Connect Click',
       label: 'LinkedIn Profile',
     });
 
