@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import SocialIcons from "./SocialIcons";
 import styles from "./header.module.css";
 import profilePic from '../assets/Sankalpa-Senevirathne.webp';
+import ReactGA from 'react-ga4';
 
 export default function Header() {
 
@@ -33,7 +34,7 @@ export default function Header() {
           <p className="relaxed">
             I transform ideas into seamless and captivating digital experiences.
           </p>
-          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank" onClick={handleConnectClick}>Let's Connect</a>
+          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank" rel="noopener noreferrer" onClick={handleConnectClick} >Let's Connect</a>
         </div>
         <Navbar />
       </div>
