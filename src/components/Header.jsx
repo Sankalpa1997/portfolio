@@ -4,6 +4,17 @@ import styles from "./header.module.css";
 import profilePic from '../assets/Sankalpa-Senevirathne.webp';
 
 export default function Header() {
+
+  const handleConnectClick = (e) => {
+
+    ReactGA.event({
+      category: 'Social',
+      action: 'Click',
+      label: 'LinkedIn Profile',
+    });
+
+  };
+
   return (
     <header className={styles.header}>
       <div>
@@ -22,7 +33,7 @@ export default function Header() {
           <p className="relaxed">
             I transform ideas into seamless and captivating digital experiences.
           </p>
-          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank">Let's Connect</a>
+          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank" onClick={handleLinkedInClick}>Let's Connect</a>
         </div>
         <Navbar />
       </div>
