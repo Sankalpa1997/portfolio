@@ -33,7 +33,7 @@ export default function Header() {
           <p className="relaxed">
             I transform ideas into seamless and captivating digital experiences.
           </p>
-          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank" onClick={handleLinkedInClick}>Let's Connect</a>
+          <a className="btn" href="https://www.linkedin.com/in/sankalpasenevirathne/" target="_blank" onClick={handleConnectClick}>Let's Connect</a>
         </div>
         <Navbar />
       </div>
