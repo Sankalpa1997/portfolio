@@ -69,6 +69,7 @@ export default function Project() {
           "/data/projects/aa-semi-trailers.md",
           "/data/projects/civiq.md",
           "/data/projects/halifax.md",
+          "/data/projects/fisherlane.md",
           "/data/projects/plugseven.md",
           "/data/projects/aqualine.md",
         ];
