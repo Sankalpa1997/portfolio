@@ -31,14 +31,14 @@ const fetchMarkdownFile = async (filePath) => {
 };
 
 const fadeInLeftWithBlur = {
-  hidden: { opacity: 0, x: -50, filter: "blur(10px)" },
+  hidden: { opacity: 0, x: -50, filter: 'blur(10px)' }, 
   visible: {
     opacity: 1,
     x: 0,
-    filter: "blur(0px)",
+    filter: 'blur(0px)', 
     transition: {
-      duration: 0.3,
-      staggerChildren: 0.2,
+      duration: 0.3, 
+      staggerChildren: 0.2, 
     },
   },
 };
@@ -95,9 +95,12 @@ export default function Project() {
   }, []);
 
   return (
-    <section
+    <motion.section
       id="projects"
       className="section-padding-bottom"
+      initial="hidden"
+      whileInView="visible"
+      variants={fadeInLeftWithBlur}
     >
       <div className="section-header-wrapper">
         <h2>
@@ -108,12 +111,13 @@ export default function Project() {
       </div>
       <div className={styles.projectsWrapper}>
         {projects.map((project, index) => (
-          <a
+          <motion.a
             key={index}
             href={project.projectURL}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.projectCard}
+            variants={experienceCardVariant}
           >
             <div>
               <span className={styles.featuredTitle}>Featured Project</span>
@@ -158,7 +162,7 @@ export default function Project() {
                   ))}
               </div>
             </div>
-          </a>
+          </motion.a>
         ))}
 
         <div>
@@ -173,6 +177,6 @@ export default function Project() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
