@@ -23,11 +23,14 @@ skills:
   - "Webpack"
 ---
 
-- Developed mobile responsive websites from scratch using HTML5, CSS, SASS, JavaScript, and JQuery while closely adhering to the provided UI/UX design in Figma and Adobe XD.
-- Developed efficient and sustainable web applications aligned with business objectives and client requirements using PHP Laravel, React JS, and MySQL.
-- Custom WordPress themes and Shopify e-commerce theme development from scratch in adherence to design directives.
-- Collaborated through GitHub to streamline and enhance development processes.
-- Engaged in SEO initiatives to enhance online visibility.
-- Tested and optimized web applications to increase their performance.
-- Managed DNS records and cPanel administration.
-- Database migration and maintaining the security standards of the web applications.
+- Develop mobile-responsive websites using HTML5, CSS, SCSS, JavaScript, and jQuery, based on Figma and Adobe XD designs.
+- Build web applications with React.js aligned with client requirements and business goals.
+- Develop custom WordPress themes and plugins using PHP, HTML, CSS, SCSS, and JavaScript.
+- Develop and implement custom Shopify themes with Liquid and JSON schema.
+- Develop Webflow websites with custom CSS and JavaScript solutions.
+- Collaborate via GitHub for version control and streamlined development.
+- Optimize websites for SEO, improving search engine rankings.
+- Improved development time by 30% through agile workflows and task automation.
+- Increased web application performance by 15% through front-end optimizations, reducing load times through minification and image optimization.
+- Manage DNS records and handle cPanel administration.
+- Oversee database migration and maintain web application security standards
