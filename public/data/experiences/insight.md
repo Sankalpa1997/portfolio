@@ -1,11 +1,12 @@
 ---
-position: "Full Stack Developer"
-companyName: "Splashbox"
+position: "Web Developer"
+companyName: "Insight Consultancy"
 companyWebsite: "https://www.splashbox.com.au"
-startDate: "Dec 2021"
-endDate: "June 2025"
+startDate: "June 2025"
+endDate: "Present"
 skills:
-  - "React JS"
+  - "WordPress"
+  - "Shopify"
   - "JavaScript"
   - "JQuery"
   - "HTML5"
@@ -14,9 +15,6 @@ skills:
   - "Bootstrap"
   - "JSON"
   - "MySQL"
-  - "WordPress"
-  - "Shopify"
-  - "Webflow"
   - "Git CLI"
   - "GitHub"
   - "NPM"
@@ -27,7 +25,6 @@ skills:
 - Build web applications with React.js aligned with client requirements and business goals.
 - Develop custom WordPress themes and plugins using PHP, HTML, CSS, SCSS, and JavaScript.
 - Develop and implement custom Shopify themes with Liquid and JSON schema.
-- Develop Webflow websites with custom CSS and JavaScript solutions.
 - Collaborate via GitHub for version control and streamlined development.
 - Optimize websites for SEO, improving search engine rankings.
 - Improved development time by 30% through agile workflows and task automation.

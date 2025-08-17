@@ -45,6 +45,7 @@ export default function Experience() {
   useEffect(() => {
     const loadExperiences = async () => {
       const experienceFiles = [
+        "/data/experiences/insight.md",
         "/data/experiences/splashbox.md",
         "/data/experiences/treinetic.md",
       ];
