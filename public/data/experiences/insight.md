@@ -1,7 +1,7 @@
 ---
 position: "Web Developer"
 companyName: "Insight Consultancy"
-companyWebsite: "https://www.splashbox.com.au"
+companyWebsite: "https://insightconsultancy.co.uk/"
 startDate: "June 2025"
 endDate: "Present"
 skills:
